@@ -65,14 +65,18 @@ table {border-collapse: collapse; border-spacing: 0;}
 
 
 /* Section 3: General Styles */
-body, p, div {font-family: 'Courier';
-  font-size:1em;
-  line-height: 110%;
+body {
 background-color: #fafeff;
 background-image: url(http://www.transparenttextures.com/patterns/paper.png);
 }
+p, div {font-family: 'Courier';
+  font-size:1em;
+  line-height: 110%;
+}
+
 .maincontent {
-  width: 80%; 
+  width: 80%;
+  max-width: 1000px; 
   margin: 0 auto;
   position: relative;
 }
@@ -96,7 +100,7 @@ img {max-width: 100%}
   margin-top: 30px}
 
 .headsubtitle {font-family: courier;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight:regular;
   text-align: center;
   color: #111;
@@ -105,7 +109,7 @@ img {max-width: 100%}
   padding-bottom:30px
 }
 .headimage {
-  background-image: url("/images/plantin_letterpress_fotor.jpg");
+  background-image: url("/images/letterpresscmyk.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   /*background-attachment: fixed;*/
@@ -137,7 +141,9 @@ div.contact {
   float:left;
   margin-top:40px;
   margin-left:40px;
-  background-color: #333;
+  background-color: #aaa;
+  background-image: url(/images/brick-wall.jpg);
+  background-size: cover;
   border-radius: 10px;
   padding:20px;
   font-size:1.5em;
@@ -145,8 +151,8 @@ div.contact {
 }
 .contact li, .contact a {
   
-  color:#ccc;
+  color:#333;
 }
 .contact h1 {
-  color:#999
+  color:#333
 }
