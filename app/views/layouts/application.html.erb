@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Morrison</title>
+  <title>Morrison Printing + Creative Services: a Tampa based printer and graphic design company.</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -10,17 +10,6 @@
 <body>
 
 <%= yield %>
-<script type="text/javascript">
-    (function() {
-        var path = '//easy.myfonts.net/v2/js?sid=251566(font-family=Brandon+Printed+One)&sid=251567(font-family=Brandon+Printed+Two)&key=kT1QvzCU3v',
-            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-            trial = document.createElement('script');
-        trial.type = 'text/javascript';
-        trial.async = true;
-        trial.src = protocol + path;
-        var head = document.getElementsByTagName("head")[0];
-        head.appendChild(trial);
-    })();
-</script>
+
 </body>
 </html>

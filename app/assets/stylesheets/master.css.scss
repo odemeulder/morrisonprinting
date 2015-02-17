@@ -2,6 +2,7 @@
 Table of content
 Section 1 
   Css reset
+  web fonts
 Section 2 
   Grid
 Section 3
@@ -24,6 +25,34 @@ blockquote, q {quotes: none;}
 blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
 table {border-collapse: collapse; border-spacing: 0;} 
 
+/**
+ * @license
+ * MyFonts Webfont Build ID 2974320, 2015-02-17T14:03:54-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: BrandonPrinted-Two by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon-printed/two/
+ * Copyright: Copyright (c) 2013 by Hannes von Doehren. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2974320
+ * 
+ * © 2015 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2d6270");
+
+  
+@font-face {font-family: 'BrandonPrinted-Two';src: url('/webfonts/2D6270_0_0.eot');src: url('/webfonts/2D6270_0_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/2D6270_0_0.woff2') format('woff2'),url('/webfonts/2D6270_0_0.woff') format('woff'),url('/webfonts/2D6270_0_0.ttf') format('truetype');}
+  
 
 /* Section 2: grid system */
 .section {
@@ -67,7 +96,7 @@ table {border-collapse: collapse; border-spacing: 0;}
 /* Section 3: General Styles */
 body {
 background-color: #fafeff;
-background-image: url(http://www.transparenttextures.com/patterns/paper.png);
+background-image: url(/images/paper.png);
 }
 p, div {font-family: 'Courier';
   font-size:1em;
@@ -80,7 +109,7 @@ p, div {font-family: 'Courier';
   margin: 0 auto;
   position: relative;
 }
-h1 {font-family: 'Brandon Printed Two';
+h1 {font-family: 'BrandonPrinted-Two';
   font-size:1.2em;
   color:#006B8F;
   line-height: 120%;
@@ -110,7 +139,7 @@ img {max-width: 100%}
 }
 .headimage {
   background-image: url("/images/letterpresscmyk.jpg");
-  background-position: center center;
+  background-position: left center;
   background-repeat: no-repeat;
   /*background-attachment: fixed;*/
   background-size: 100%;
@@ -145,9 +174,9 @@ div.contact {
   background-image: url(/images/brick-wall.jpg);
   background-size: cover;
   border-radius: 10px;
-  padding:20px;
-  font-size:1.5em;
-  width:25%
+  padding:20px 5px;
+  font-size:1em;
+  width:15%
 }
 .contact li, .contact a {
   
@@ -158,6 +187,7 @@ div.contact {
 }
 .logo {
   text-align:center;
+  padding: 20px 0;
 }
 .logo img {
   width:30%
