@@ -10,6 +10,17 @@
 <body>
 
 <%= yield %>
-
+<script type="text/javascript">
+    (function() {
+        var path = '//easy.myfonts.net/v2/js?sid=251566(font-family=Brandon+Printed+One)&sid=251567(font-family=Brandon+Printed+Two)&key=kT1QvzCU3v',
+            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+            trial = document.createElement('script');
+        trial.type = 'text/javascript';
+        trial.async = true;
+        trial.src = protocol + path;
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(trial);
+    })();
+</script>
 </body>
 </html>
