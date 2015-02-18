@@ -86,13 +86,6 @@ table {border-collapse: collapse; border-spacing: 0;}
   width: 23.8%;
 }
 
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
-  .col {  margin: 1% 0 1% 0%; }
-  .span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
-  }
-
-
 /* Section 3: General Styles */
 body {
 background-color: #fafeff;
@@ -169,7 +162,7 @@ li {
 div.contact {
   float:left;
   margin-top:40px;
-  margin-left:40px;
+  margin-left:3%;
   background-color: #aaa;
   background-image: url(/images/brick-wall.jpg);
   background-size: cover;
@@ -192,3 +185,14 @@ div.contact {
 .logo img {
   width:30%
 }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 1024px) {
+  div.contact { width: 50%; }
+  }
+
+@media only screen and (max-width: 480px) {
+  .col {  margin: 1% 0 1% 0%; }
+  .span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
+  div.contact { width: 80%; }
+  }
